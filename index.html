@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Yuga Desai Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+	
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+.packages .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:20px;
+  padding: 10px;
+}
+
+.packages .box-container .box{
+  flex:1 1 300px;
+  border-radius: .50px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,.1);
+}
+
+.packages .box-container .box img{
+  height: 250px;
+  width:100%;
+  object-fit: cover;
+}
+
+.packages .box-container .box .content{
+  padding:20px;
+}
+
+.packages .box-container .box .content h3{
+  font-size:20px;
+  color:#333;
+}
+
+.packages .box-container .box .content h3 i{
+  color:var(--orange);
+}
+
+.packages .box-container .box .content p{
+  font-size:17px;
+  color:#666;
+  padding:1rem 0;
+}
+
+.packages .box-container .box .content .stars i{
+  font-size:17px;
+  color:var(--orange);
+}
+
+.packages .box-container .box .content .price{
+  font-size: 20px;
+  color:#333;
+  padding-top: 10px;
+}
+
+.packages .box-container .box .content .price span{
+  color:#666;
+  font-size: 15px;
+  text-decoration: line-through;
+}
+.packages .mesorny{
+    columns: 4;
+    column-gap: 1.6rem;
+    padding: .4rem;
+}
+.packages .grid img{
+    width: 100%;
+    border-radius: .5rem;
+}
+.packages .grid{
+    display: inline-block;
+    margin-bottom: 1.6rem;
+    position: relative;
+}
+@media (max-width: 1200px){
+    .packages .mesorny{
+        columns: 3;
+    }
+}
+@media (max-width: 992px){
+    nav{
+        display: inline-table;
+        justify-content: center;
+    }
+    
+    .packages .mesorny{
+        columns: 2;
+    }
+}
+@media (max-width: 520px){
+    .packages .mesorny{
+        columns: 1;
+    }
+}
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	 <div class="nav"> 
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Yuga Desai</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Blogs</span></a></li>
+	          <li class="nav-item"><a href="#Testimonials-section" class="nav-link"><span>Testimonials</span></a></li>
+			  <li class="nav-item"><a href="#packages" class="nav-link"><span>Gallery</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	</div>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/Yuga.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Namaste!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Yuga Desai</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'MBA Student  ',
+						'',
+						'   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>MIT-WPU Student</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://www.linkedin.com/in/yuga-desai-5a562a219?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="btn btn-primary py-3 px-4">LinkedIn</a> 
+							
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/Yuga Square.jpg" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Yuga Desai</span></p>
+										<p><span class="title-s"></span> <span></span></p>
+										<p><span class="title-s"></span> <span></span></p>
+										<p><span class="title-s">Address: </span> <span>Pune, India</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>Team Leadership</span> <span class="pull-right">100%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Strategic Planning</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Market Research & Competitive Analysis</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Statistical Analysis</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Presentation Skills</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>Yuga P. Desai is currently pursuing an MBA in Operations and Supply Chain Management (MBA-OSCM) at MIT-WPU. With a deep interest in understanding the complexities of supply chains, she is focused on developing efficient solutions to optimize operations. She emphasizes continuous learning and professional growth and aims to apply his skills and knowledge to real-world challenges, aiming to make a significant impact in the field. Yuga is open to connecting with like-minded professionals and is enthusiastic about exploring collaboration opportunities within the industry.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>MBA Student</span></li>
+									<li class="d-flex"><span>Age:</span> <span>22</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Pursuing MBA-OSCM</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Marathi, Hindi, German(A1)</span></li>
+									<li class="d-flex"><span>Hobbies:</span> <span>Fabric Painting, Exploring new places </span></li>
+									<li class="d-flex"><span></span> <span></span></li>
+									<li class="d-flex"><span></span> <span></span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="" data-number=""></span> <span></span>
+									<span>&nbsp; </spanspan>
+								</p>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+								
+							
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Yuga</h1>
+            <h2 class="mb-4">Yuga</h2>
+            <p></p>
+          </div>
+        </div>
+
+		<div class="row">
+			<div class="row justify-content-center pb-5">
+		  <div class="col-md-10 heading-section text-center ftco-animate">
+			<h1 class="big big-2">Blogs</h1>
+			<h2 class="mb-4">Blogs</h2>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">My MBA Journey in Supply Chain Management: A World of Challenges and Opportunities</span>
+						<h2></h2>
+						<span class="position"></span>
+						<p class="mt-4"> Pursuing an MBA is a life-changing experience, and choosing to specialize in Supply Chain Management (SCM) has made it even more exciting for me. I’ve always been intrigued by how companies manage the movement of goods and services across the globe, ensuring the right products reach the right people at the right time. This fascination drove my decision to focus on SCM, and so far, it’s been an incredible journey.
+							<ul>
+								<li>Why I Chose Supply Chain Management: 
+									Supply chains are the heart of every business. Companies like Amazon, Apple, and Tesla have mastered the art of creating seamless, efficient systems that connect suppliers, manufacturers, and customers. I wanted to dive into this world to better understand how these processes work and, more importantly, how they can be improved. For me, SCM isn’t just about logistics or operations; it’s about solving complex problems and making a real impact.
+									</li>
+								<li>The Challenges That Shaped Me: 
+									Let’s be real—learning about supply chains isn’t all smooth sailing. There’s so much complexity involved, from optimizing logistics networks to handling global sourcing challenges. One of the toughest yet most rewarding experiences I’ve had was debating whether businesses should prioritize sustainability over cost efficiency. It’s these kinds of discussions that make you think deeply and sharpen your decision-making skills.
+									</li>
+								<li>Advice for Aspiring Supply Chain Professionals: 
+									If you’re thinking about specializing in supply chain management, here’s what I’ve learned so far:
+									•	Stay curious—there’s always more to learn.
+									•	Take advantage of internships and projects to get hands-on experience.
+									•	Build a strong network; it’s one of the most valuable aspects of an MBA.
+									Most importantly, remember that supply chain management isn’t just about moving products—it’s about creating value, solving problems, and making an impact.
+									</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Discovering Supply Chain Management as a First-Year MBA Student</span>
+						<h2></h2>
+						<span class="position"></span>
+						<p class="mt-4">As a first-year MBA student, I haven’t started my specialization yet, but I’m already looking forward to diving into Supply Chain Management (SCM) next year. Right now, I’m exploring a mix of subjects—marketing, finance, HR, and operations—which has given me a broad perspective on how businesses work. Along the way, I’ve developed a real curiosity about the role supply chains play in keeping everything running smoothly.
+							<ul>
+								<li>What I’ve Learned So Far About Supply Chains
+									Even though I haven’t taken specific SCM courses yet, some of the concepts I’ve encountered have given me a glimpse into how important supply chains are:
+										Operations and Efficiency
+									
+						
+									Through case studies and class discussions, I’ve been introduced to how technology is transforming supply chains. AI, automation, and even blockchain are helping companies make faster, smarter, and more sustainable decisions.
+									</li>
+								<li>In my operations management class, we focused on how businesses optimize their resources to deliver results. This got me thinking about how supply chains fit into the bigger picture, ensuring everything from production to delivery happens seamlessly.
+									Understanding Business Strategy</li>
+								<li>Strategy discussions often touch on the role of supply chains, especially when it comes to staying competitive. Whether it’s sourcing materials globally or finding ways to lower costs without compromising quality, SCM is always part of the conversation.
+									Technology and Innovation</li>
+								<li>What I’m Excited About
+									Looking ahead, I’m eager to dive deeper into supply chain management during my second year. I’m especially interested in learning about global supply chains, risk management, and how businesses can balance cost efficiency with environmental responsibility. SCM seems to require a mix of strategic thinking and practical problem-solving, and I can’t wait to explore it more.
+									</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+	</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+		
+	
+
+
+<section class="ftco-section ftco-no-pb" id="resume-section">
+		<div class="row justify-content-center pb-5">
+			<div class="col-md-10 heading-section text-center ftco-animate">
+			<h1 class="big big-2">Education</h1>
+			<h2 class="mb-4">Education</h2>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2021</span>
+    					<h2>B.Tech</h2>
+    					<span class="position">Dr. Vishwanath Karad MIT World Peace University, Pune</span>
+    					<p class="mt-4">CGPA 9.38/10</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2017</span>
+    					<h2>Higher Secondary School</h2>
+    					<span class="position">Khemraj Memorial English School & Dr. V. K. Toraskar Junior college, Banda</span>
+    					<p class="mt-4">80.46 %</p>
+    				</div>
+				</div>
+    		</div>
+			
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="https://drive.google.com/file/d/1LlA5HPVZqdTnOyO8aUjjexojzGRQ5UVy/view?usp=drivesdk " class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+		
+			
+			
+    	</div>
+    </section>
+	
+
+
+	<section class="ftco-section Testimonials-section ftco-no-pb" id="Testimonials-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-5">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+				<h1 class="big big-2">Testimonials</h1>
+				<h2 class="mb-4">Testimonials</h2>
+				<p>Below are the following Testimonials</p>
+				<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Ayush Kumar Patra</span>
+						<h2>Manufacturing Engineer, Varroc Polymers Ltd.</h2>
+						<span class="position"></span>
+						<p class="mt-4"> "Starting our careers together as part of the same GET batch was an amazing experience, and working with Yuga has always been a highlight. Even though we were in different departments, we got to collaborate on a few projects in our first year, and I was genuinely impressed by her ability to think outside the box and get things done. Yuga is great at connecting with people, bringing ideas to life, and making sure everything runs smoothly. She is someone you can always count on, and it’s been a pleasure working alongside her."
+							<ul>
+								
+									
+								
+									
+								
+									
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Kapil Jamodkar</span>
+						<h2>R&D Manager (Material Engineering), Varroc Polymers Ltd.</h2>
+						<span class="position"></span>
+						<p class="mt-4">"It’s been amazing to see [Your Name] grow and thrive in her first role as a Graduate Engineer Trainee. From the beginning, she stood out with her enthusiasm, curiosity, and eagerness to learn. She quickly adapted to the challenges of working on different projects and consistently delivered great results. What really impressed me was her ability to grasp new concepts, work seamlessly with others, and bring fresh perspectives to the table. She’s always positive, hardworking, and dependable, and I’m excited to see all the great things she’ll achieve in her career."
+							<ul>		
+								
+									
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+					<div class="col-md-6">
+						<div class="resume-wrap ftco-animate">
+							<span class="date">Pranav Binniwale</span>
+							<h2>Marketing Manager, Envalior</h2>
+							<span class="position"></span>
+							<p class="mt-4">"Working with Yuga on our project exploring future trends in green materials and biomaterials has been a great experience. She brings a thoughtful approach, blending industry knowledge with fresh, innovative ideas. What really stands out is her commitment to sustainability and her ability to turn complex concepts into practical solutions. Yuga has been a true collaborator throughout, and I’m confident she will make a positive impact wherever she go."
+								<ul>
+									
+									
+								
+									
+								
+									
+								</ul>
+							</p>
+						</div>
+					</div>
+
+					
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+			</div>
+		</div>
+	<section class="packages" id="packages">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-5">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+				<h1 class="big big-2">Photos</h1>
+				<h2 class="mb-4">Photos</h2>
+		   </div>
+			</div>
+		<div class="mesorny">
+			<div class="grid">
+				<img src="images/MIT.jpg" alt="">
+			</div>
+			<div class="grid">
+			   <img src="images/1.jpg" alt="">
+		   </div>
+		   <div class="grid">
+			   <img src="images/2.jpg" alt="">
+		   </div>
+		   <div class="grid">
+			   <img src="images/3.jpg" alt="">
+		   </div>
+		   <div class="grid">
+			   <img src="images/4.jpg" alt="">
+		   </div>
+		   <div class="grid">
+			   <img src="images/5.jpg" alt="">
+		   </div>
+		   <div class="grid">
+			   <img src="images/6.jpg" alt="">
+		   </div>
+		   <div class="grid">
+			   <img src="images/7.jpg" alt="">
+		   </div>
+		   <div class="grid">
+			   <img src="images/8.jpg" alt="">
+		   </div>
+		   <div class="grid">
+			   <img src="images/9.jpg" alt="">
+		   </div>
+		   <div class="grid">
+			   <img src="images/10.jpg" alt="">
+		   </div>
+		   <div class="grid">
+			   <img src="images/forum.jpg" alt="">
+		   </div>
+		   <div class="grid">
+			   <img src="images/white.jpg" alt="">
+		   </div>
+		   <div class="grid">
+			   <img src="images/idli.jpg" alt="">
+		   </div>
+		   <div class="grid">
+			   <img src="images/tamil.jpg" alt="">
+		   </div>
+		   <div class="grid">
+			   <img src="images/himalayan.jpg" alt="">
+		   </div>
+		   <div class="grid">
+			   <img src="images/img18.jpg" alt="">
+		   </div>
+		   
+		</div>
+		<!--
+	   <div class="container">
+		<div class="row justify-content-center mb-5 pb-5">
+		<div class="col-md-7 heading-section text-center ftco-animate">
+			<h1 class="big big-2">Photos</h1>
+			<h2 class="mb-4">Photos</h2>
+	   </div>
+		</div>
+	   <div class="col-md-4 d-flex ftco-animate">
+		<div class="blog-entry justify-content-end">
+		<a class="block-20 zoom-effect" style="background-image: url('images/BMCC\ Group.jpg');">
+		</a>
+		<div class="text mt-3 float d-block">
+		
+			<h3 class="heading"><a href="">......MIT Group.....</a></h3>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="" class="block-20 zoom-effect" style="background-image: url(images/MIT\ Group.jpg);">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+				<h3 class="heading"><a href=""></a></h3>
+                <p>.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="" class="block-20 zoom-effect" style="background-image: url(images/College\ Interactions.jpg);">
+              </a>
+              <div class="text mt-3 float-right d-block">
+  
+	
+		
+
+    </div>
+	</div>
+	</div>
+	</div>-->
+	</section>
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Sawantwadi, India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://+91 9067383989">+91 9067383989</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p text-align="center"><a href="yugadesai2299@gmail.com" >yugadesai2299@gmail.com</a></p>
+	          </div>
+			</div>
+
+		 
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/yuga-desai-5a562a219?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><span class="icon-linkedin"></span></a></li>  
+					 
+
+				      <li class="ftco-animate"><a href="https://www.instagram.com/yuga_desai_/profilecard/?igsh=Z3N0cDFlaXY3bmlr"><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made by <i class="" aria-hidden=""></i><a href="" target="">Yuga Desai</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
